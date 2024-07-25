@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Container, Table, Thead, Tbody, Tr, Th, Td, TableCaption } from '@chakra-ui/react';
+import { Container, Table, Thead, Tbody, Tr, Th, Td } from '@chakra-ui/react';
 import { MainContext } from '../context/MainContextProvider';
 
 const Calculations = () => {
