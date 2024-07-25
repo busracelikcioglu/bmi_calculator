@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
+
 const BMIDetails = () => {
   const location = useLocation();
   const [userData, setUserData] = useState(null);
@@ -29,7 +30,8 @@ const BMIDetails = () => {
   }
 
   return (
-    <div>
+    <div className='container'>
+      
 
     </div>
   );

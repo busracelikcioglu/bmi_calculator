@@ -1,9 +1,11 @@
 import React from 'react';
-
+import whatisbmi from '../assets/whatisbmi.jpg'; 
 const AboutBMI = () => {
   return (
     <div>
       <h1>BMI Nedir?</h1>
+      <div className='container'><img src={whatisbmi} alt="BMI" className="whatsbmi-image" /></div>
+      
       <p>
         Vücut kitle indeksi (BMI), bir kişinin kilosunun boyuna göre sağlıklı olup olmadığını belirlemeye yardımcı olan bir ölçüttür. 
         BMI, kilogram cinsinden kilonun, metre cinsinden boyun karesine bölünmesiyle hesaplanır.
