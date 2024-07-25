@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Result from './pages/Result';
+import Navbar from './components/Navbar';
+import AboutBMI from './pages/AboutBMI';
+import './styles/global.css';
+import Calculations from './pages/Calculations';
+import MainContextProvider from './context/MainContextProvider';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <MainContextProvider>
+
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/result" element={<Result />} />
+        <Route path="/about-bmi" element={<AboutBMI />} />
+        <Route path="/calculations" element={<Calculations />} />
+
+
+      </Routes>
+      </MainContextProvider>
+
+    </>
   );
 }
 
